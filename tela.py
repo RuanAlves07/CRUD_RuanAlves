@@ -38,10 +38,10 @@ class CRUDApp:
 
         # BOTÕES DO CRUID
 
-        tk.Button(self.root, text = "Criar usuário", command = self.create_widgets).grid(row = 6, column = 0, columnspan = 1)
-        tk.Button(self.root, text = "Listar usuário", command = self.create_widgets).grid(row = 6, column = 1, columnspan = 1)
-        tk.Button(self.root, text = "Alterar usuário", command = self.create_widgets).grid(row = 7, column = 0, columnspan = 1)
-        tk.Button(self.root, text = "Excluir usuário", command = self.create_widgets).grid(row = 7, column = 1, columnspan = 1)
+        tk.Button(self.root, text = "Criar usuário", command = self.create_user).grid(row = 6, column = 0, columnspan = 1)
+        tk.Button(self.root, text = "Listar usuário", command = self.read_users).grid(row = 6, column = 1, columnspan = 1)
+        tk.Button(self.root, text = "Alterar usuário", command = self.update_user).grid(row = 7, column = 0, columnspan = 1)
+        tk.Button(self.root, text = "Excluir usuário", command = self.delete_user).grid(row = 7, column = 1, columnspan = 1)
 
     def create_user(self):
 
