@@ -30,7 +30,7 @@ def read_users():
     conn.close()
     return result
 
-def update_user(userID, nome, telefone, email, usuario, senha):
+def update_user( nome, telefone, email, usuario, senha, userID):
 
     conn = get_connection()
     cursor = conn.cursor()
@@ -45,7 +45,7 @@ def delete_user(userID):
     conn = get_connection()
     cursor = conn.cursor()
     query = "DELETE FROM usuario WHERE idusuario = %s"
-    cursor.execute(query, (userID))
+    cursor.execute(query, (userID,))
     conn.commit()
     cursor.close()
     conn.close()
