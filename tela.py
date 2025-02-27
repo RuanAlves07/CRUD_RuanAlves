@@ -41,7 +41,6 @@ class CRUDApp:
         self.email_entry.grid(row = 2, column = 1)
         self.usuario_entry.grid(row = 3, column = 1)
         self.senha_entry.grid(row = 4, column = 1)
-
         self.userID_entry.grid(row = 5, column = 1)
 
 
@@ -80,7 +79,7 @@ class CRUDApp:
 
     def update_user(self):
 
-        userID = self.UserID_entry.get()
+        userID = self.userID_entry.get()
         nome = self.nome_entry.get()
         telefone = self.telefone_entry.get()
         email = self.email_entry.get()
@@ -100,9 +99,9 @@ class CRUDApp:
 
     def delete_user(self):
 
-        UserID = self.userID_entry.get()
-        if UserID:
-            delete_user(UserID)
+        userID = self.userID_entry.get()
+        if userID:
+            delete_user(userID)
             self.userID_entry.delete(0, tk.END)
             messagebox.showerror("Success","Usuário excluido com sucesso!")
         else:
