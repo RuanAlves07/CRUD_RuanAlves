@@ -30,7 +30,7 @@ def read_users():
     conn.close()
     return result
 
-def update_user( userID, nome, telefone, email, usuario, senha):
+def update_user(userID, nome, telefone, email, usuario, senha):
 
     conn = get_connection()
     cursor = conn.cursor()
