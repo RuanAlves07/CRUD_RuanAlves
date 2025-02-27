@@ -29,12 +29,21 @@ class CRUDApp:
 
         # CRIAR AS CAIXAS PARA DIGITAR OS VALORES E POSICIONAR
 
-        self.nome_entry = tk.Entry(self.root).grid(row = 0, column = 1)
-        self.telefone_entry = tk.Entry(self.root).grid(row = 1, column = 1)
-        self.email_entry = tk.Entry(self.root).grid(row = 2, column = 1)
-        self.usuario_entry = tk.Entry(self.root).grid(row = 3, column = 1)
-        self.senha_entry = tk.Entry(self.root).grid(row = 4, column = 1)
-        self.userID_entry = tk.Entry(self.root).grid(row = 5, column = 1)
+        self.nome_entry = tk.Entry(self.root)
+        self.telefone_entry = tk.Entry(self.root)
+        self.email_entry = tk.Entry(self.root)
+        self.usuario_entry = tk.Entry(self.root)
+        self.senha_entry = tk.Entry(self.root)
+        self.userID_entry = tk.Entry(self.root)
+
+        self.nome_entry.grid(row = 0, column = 1)
+        self.telefone_entry.grid(row = 1, column = 1)
+        self.email_entry.grid(row = 2, column = 1)
+        self.usuario_entry.grid(row = 3, column = 1)
+        self.senha_entry.grid(row = 4, column = 1)
+
+        self.userID_entry.grid(row = 5, column = 1)
+
 
         # BOTÕES DO CRUID
 
