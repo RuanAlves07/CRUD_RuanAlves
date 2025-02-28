@@ -44,12 +44,15 @@ class CRUDApp:
         self.userID_entry.grid(row = 5, column = 1)
 
 
-        # BOTÕES DO CRUID
+        # BOTÕES DO CRUD
 
         tk.Button(self.root, text = "Criar usuário", command = self.create_user).grid(row = 6, column = 0, columnspan = 1)
         tk.Button(self.root, text = "Listar usuário", command = self.read_users).grid(row = 6, column = 1, columnspan = 1)
         tk.Button(self.root, text = "Alterar usuário", command = self.update_user).grid(row = 7, column = 0, columnspan = 1)
         tk.Button(self.root, text = "Excluir usuário", command = self.delete_user).grid(row = 7, column = 1, columnspan = 1)
+
+        self.text_area = tk.Text(self.root, height = 10, width = 80)
+        self.text_area.grid (row = 10, column = 0, columnspan = 4)
 
     def create_user(self):
 
